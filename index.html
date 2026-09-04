@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f6f5f0">
+  <meta name="description" content="Без истории — бережное самоисследование одной мысли. Понятные вопросы, личная карта сессии и сохранение только в вашем браузере.">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>Без истории · пространство для ясности</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./logic.js" defer></script>
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#screen">К содержанию</a>
+  <header class="topbar">
+    <button class="brand" data-action="home" aria-label="Без истории — на главную"><span class="brand-mark" aria-hidden="true">б.</span> Без истории</button>
+    <nav aria-label="Основная навигация"><button data-action="home">Сессия</button><button data-action="history">История</button></nav>
+  </header>
+  <div id="storage-status" role="status" class="storage-status" hidden></div>
+  <main id="screen" tabindex="-1"></main>
+  <footer><span>В вашем темпе. Без правильных ответов.</span><button data-action="privacy">О данных и методе</button><button data-action="safety">Мне сейчас небезопасно</button></footer>
+  <div id="overlay"></div>
+  <noscript><p class="notice">Для работы вопросов включите JavaScript в настройках браузера. Ответы обрабатываются только на вашем устройстве.</p></noscript>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "name": "bez-istorii",
+  "private": true,
+  "scripts": {
+    "dev": "node tests/serve.cjs",
+    "test": "node --test tests/*.test.cjs"
+  }
+}
